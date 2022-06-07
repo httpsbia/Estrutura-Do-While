@@ -1,0 +1,49 @@
+//Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo
+//seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo
+//usuário.
+
+package EstruturaDoWhile_pag50;
+import java.util.*;
+
+public class L04I {
+	public static void main (String []args) {
+		
+		int maior = 0, menor = 0, n, x;
+		Scanner sc =new Scanner (System.in);
+		
+		System.out.println("Digite um número positivo: ");
+		n = sc.nextInt();
+			
+		do {
+			
+			if (n<0) {
+				System.out.println("FIM");
+			
+			}else {
+				maior = n;
+				menor = n;
+				
+		    System.out.println("Digite um valor:");
+		    x = sc.nextInt();
+		    
+		    if (x > maior) {
+			   maior = n;
+		    }else {
+			   menor = n;
+		    }             
+			}
+			
+			
+				
+		}while (n >= 0);
+		 
+		 System.out.println(maior);
+		 System.out.println(menor);
+		 
+	}
+         
+}
+
+
+
+
